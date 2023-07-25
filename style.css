@@ -1,0 +1,41 @@
+body {
+  background-color: #dad7cd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-top: 2px solid #588157;
+  border-bottom: 2px solid #588157;
+  width: 300px;
+  height: 400px;
+}
+
+.to-do {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 28px;
+  font-weight: bold;
+}
+
+.to-do-input {
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.to-do:has(.to-do-checkbox:checked) {
+  background-color: gainsboro;
+  text-decoration: line-through;
+}
+
+.to-do:hover {
+  background-color: #a3b18a;
+}
